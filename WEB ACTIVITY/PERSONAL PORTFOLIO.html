@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MY PORTFOLIO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fdf6f9;
+            color: #333;
+        }
+
+        /* Header */
+        header {
+            background-color: #b19cd9;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffe4ec;
+        }
+
+        /* Home */
+        .home {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #f3e8ff;
+            animation: fade 1.5s;
+        }
+
+        .home h2 {
+            color: #7b5ca8;
+        }
+
+        /* Sections */
+        section {
+            padding: 35px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #8e6bbf;
+            margin-bottom: 25px;
+        }
+
+        /* Cards */
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px #00000015;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 15px #b19cd955;
+        }
+
+        .card h3 {
+            color: #8e6bbf;
+        }
+
+        /* Skills */
+        .skills span {
+            display: inline-block;
+            background-color: #b19cd9;
+            color: white;
+            padding: 10px 20px;
+            margin: 8px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+
+        .skills span:hover {
+            background-color: #ffb6c1;
+            transform: scale(1.1);
+        }
+
+        /* Contact */
+        .contact {
+            background-color: #f3e8ff;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #b19cd9;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Animation */
+        @keyframes fade {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .card {
+                width: 90%;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>MY PORTFOLIO</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#hobbies">Hobbies</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <div class="home" id="home">
+
+        <h2>HELLO,I'M MANOGNA</h2>
+
+        <p>
+            I am a first-year B.Tech student
+            interested in programming and technology.
+        </p>
+
+        <p>Welcome to my personal website!</p>
+
+    </div>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2>ABOUT ME</h2>
+
+        <p>
+            I am a passionate engineering student.
+            I enjoy learning new technologies,
+            improving my skills, and creating simple projects.
+        </p>
+
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+
+        <h2>MY EDUCATION</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>B.Tech</h3>
+                <p>Computer Science Engineering</p>
+                <p>2026 - 2030</p>
+            </div>
+
+            <div class="card">
+                <h3>Intermediate</h3>
+                <p>MPC</p>
+                <p>2024 - 2026</p>
+            </div>
+
+            <div class="card">
+                <h3>SSC</h3>
+                <p>School Education</p>
+                <p>2024</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2>TECHNICAL SKILLS</h2>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Python</span>
+            <span>Communication</span>
+        </div>
+
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2>MY PROJECTS</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Personal Website</h3>
+                <p>
+                    A simple personal website
+                    created using HTML and CSS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Cafe Website</h3>
+                <p>
+                    A simple website displaying
+                    food items and menu details.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+
+        <h2>MY HOBBIES</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <h3>Listening to Music</h3>
+                <p>I enjoy listening to music.</p>
+            </div>
+
+            <div class="card">
+                <h3>Reading</h3>
+                <p>I love reading and learning new things.</p>
+            </div>
+
+            <div class="card">
+                <h3>Exploring Technology</h3>
+                <p>I enjoy learning about new technologies.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+
+        <h2>CONTACT ME</h2>
+
+        <p>Email: manogna@gmail.com</p>
+
+        <p>Phone: 9876543210</p>
+
+        <p>Location: Andhra Pradesh, India</p>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 My Portfolio</p>
+    </footer>
+
+</body>
+</html>
